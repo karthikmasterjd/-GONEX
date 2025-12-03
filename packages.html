@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse GoNex Tours travel packages - School trips, family vacations, devotional tours, international destinations">
+    <title>Tour Packages - GoNex Tours</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-go">Go</span><span class="logo-nex">Nex</span>
+                        <span class="logo-subtitle">Tours</span>
+                    </a>
+                </div>
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="packages.html" class="active">Packages</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html" class="btn-nav">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <h1 class="page-title fade-in">Tour Packages</h1>
+            <p class="page-subtitle fade-in-delay">Discover your next adventure</p>
+        </div>
+    </section>
+
+    <!-- Package Filters -->
+    <section class="section">
+        <div class="container">
+            <div class="package-filters reveal">
+                <button class="filter-btn active" data-filter="all">All Packages</button>
+                <button class="filter-btn" data-filter="school">School Trips</button>
+                <button class="filter-btn" data-filter="family">Family Tours</button>
+                <button class="filter-btn" data-filter="devotional">Devotional</button>
+                <button class="filter-btn" data-filter="international">International</button>
+            </div>
+
+            <div class="packages-grid" id="packagesGrid">
+                <!-- Package 1 -->
+                <div class="package-card reveal" data-category="family">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1552249352-02a0817a2d95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYW1pbHklMjB2YWNhdGlvbiUyMGJlYWNofGVufDF8fHx8MTc2NDY3MDEwM3ww&ixlib=rb-4.1.0&q=80&w=1080" alt="Goa Beach Paradise">
+                        <div class="package-badge">Family</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Goa Beach Paradise</h3>
+                        <p class="package-duration"><i class="fas fa-clock"></i> 4 Days / 3 Nights</p>
+                        <p class="package-description">Enjoy pristine beaches, water sports, and vibrant nightlife in India's favorite beach destination.</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-bus"></i> Transport</span>
+                            <span><i class="fas fa-utensils"></i> Meals</span>
+                            <span><i class="fas fa-hotel"></i> Hotels</span>
+                            <span><i class="fas fa-user-tie"></i> Guide</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary btn-block">Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="package-card reveal" data-category="devotional">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1589346937506-af86b230e465?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZW1wbGUlMjBwaWxncmltYWdlJTIwaW5kaWF8ZW58MXx8fHwxNzY0NzQwMjQ0fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Tirupati Darshan">
+                        <div class="package-badge">Spiritual</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Tirupati Darshan</h3>
+                        <p class="package-duration"><i class="fas fa-clock"></i> 3 Days / 2 Nights</p>
+                        <p class="package-description">Seek blessings at the sacred Tirumala temple with VIP darshan and comfortable arrangements.</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-bus"></i> Transport</span>
+                            <span><i class="fas fa-utensils"></i> Meals</span>
+                            <span><i class="fas fa-hotel"></i> Hotels</span>
+                            <span><i class="fas fa-user-tie"></i> Guide</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary btn-block">Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="package-card reveal" data-category="school">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1630830607408-261889eb4968?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBzdHVkZW50cyUyMHRvdXJ8ZW58MXx8fHwxNzY0NzQwMjQzfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Delhi Heritage Tour">
+                        <div class="package-badge">School</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Delhi Heritage Tour</h3>
+                        <p class="package-duration"><i class="fas fa-clock"></i> 5 Days / 4 Nights</p>
+                        <p class="package-description">Educational tour covering Red Fort, Qutub Minar, India Gate, and historical monuments.</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-bus"></i> Transport</span>
+                            <span><i class="fas fa-utensils"></i> Meals</span>
+                            <span><i class="fas fa-hotel"></i> Hotels</span>
+                            <span><i class="fas fa-user-tie"></i> Guide</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary btn-block">Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- Package 4 -->
+                <div class="package-card reveal" data-category="family">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1669986480140-2c90b8edb443?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb3VudGFpbiUyMGFkdmVudHVyZSUyMHRyYXZlbHxlbnwxfHx8fDE3NjQ2NjY2NTN8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Himalayan Adventure">
+                        <div class="package-badge">Popular</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Himalayan Adventure</h3>
+                        <p class="package-duration"><i class="fas fa-clock"></i> 6 Days / 5 Nights</p>
+                        <p class="package-description">Explore the majestic Himalayas with Manali, Rohtang Pass, and adventure activities.</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-bus"></i> Transport</span>
+                            <span><i class="fas fa-utensils"></i> Meals</span>
+                            <span><i class="fas fa-hotel"></i> Hotels</span>
+                            <span><i class="fas fa-user-tie"></i> Guide</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary btn-block">Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- Package 5 -->
+                <div class="package-card reveal" data-category="devotional">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1589346937506-af86b230e465?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZW1wbGUlMjBwaWxncmltYWdlJTIwaW5kaWF8ZW58MXx8fHwxNzY0NzQwMjQ0fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Char Dham Yatra">
+                        <div class="package-badge">Spiritual</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Char Dham Yatra</h3>
+                        <p class="package-duration"><i class="fas fa-clock"></i> 12 Days / 11 Nights</p>
+                        <p class="package-description">Complete Char Dham pilgrimage covering Yamunotri, Gangotri, Kedarnath, and Badrinath.</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-bus"></i> Transport</span>
+                            <span><i class="fas fa-utensils"></i> Meals</span>
+                            <span><i class="fas fa-hotel"></i> Hotels</span>
+                            <span><i class="fas fa-user-tie"></i> Guide</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary btn-block">Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- Package 6 -->
+                <div class="package-card reveal" data-category="school">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1534443274343-c6200874852c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmF2ZWwlMjBkZXN0aW5hdGlvbiUyMHNjZW5pY3xlbnwxfHx8fDE3NjQ3NDAyNDN8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Rajasthan Cultural Tour">
+                        <div class="package-badge">School</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Rajasthan Cultural Tour</h3>
+                        <p class="package-duration"><i class="fas fa-clock"></i> 7 Days / 6 Nights</p>
+                        <p class="package-description">Experience rich culture and history with Jaipur, Jodhpur, Udaipur, and desert safari.</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-bus"></i> Transport</span>
+                            <span><i class="fas fa-utensils"></i> Meals</span>
+                            <span><i class="fas fa-hotel"></i> Hotels</span>
+                            <span><i class="fas fa-user-tie"></i> Guide</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary btn-block">Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- Package 7 -->
+                <div class="package-card reveal" data-category="international">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1695686017637-cbba70d6d5a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob25leW1vb24lMjByb21hbnRpYyUyMGNvdXBsZXxlbnwxfHx8fDE3NjQ3NDAyNDR8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Maldives Honeymoon">
+                        <div class="package-badge">International</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Maldives Honeymoon</h3>
+                        <p class="package-duration"><i class="fas fa-clock"></i> 5 Days / 4 Nights</p>
+                        <p class="package-description">Romantic overwater villas, pristine beaches, and exclusive couple experiences in paradise.</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-plane"></i> Flights</span>
+                            <span><i class="fas fa-utensils"></i> Meals</span>
+                            <span><i class="fas fa-hotel"></i> Resort</span>
+                            <span><i class="fas fa-cocktail"></i> Activities</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary btn-block">Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- Package 8 -->
+                <div class="package-card reveal" data-category="international">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1758599668723-8980171e4330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0b3VyaXN0JTIwaGFwcHklMjBncm91cHxlbnwxfHx8fDE3NjQ3NDAyNDV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Dubai Extravaganza">
+                        <div class="package-badge">International</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Dubai Extravaganza</h3>
+                        <p class="package-duration"><i class="fas fa-clock"></i> 6 Days / 5 Nights</p>
+                        <p class="package-description">Visit Burj Khalifa, Dubai Mall, Desert Safari, and experience luxury in the UAE.</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-plane"></i> Flights</span>
+                            <span><i class="fas fa-utensils"></i> Meals</span>
+                            <span><i class="fas fa-hotel"></i> Hotels</span>
+                            <span><i class="fas fa-user-tie"></i> Guide</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary btn-block">Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- Package 9 -->
+                <div class="package-card reveal" data-category="family">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1534443274343-c6200874852c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmF2ZWwlMjBkZXN0aW5hdGlvbiUyMHNjZW5pY3xlbnwxfHx8fDE3NjQ3NDAyNDN8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Kerala Backwaters">
+                        <div class="package-badge">Family</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Kerala Backwaters</h3>
+                        <p class="package-duration"><i class="fas fa-clock"></i> 5 Days / 4 Nights</p>
+                        <p class="package-description">Serene houseboat stays, tea plantations, and beautiful hill stations in God's Own Country.</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-bus"></i> Transport</span>
+                            <span><i class="fas fa-utensils"></i> Meals</span>
+                            <span><i class="fas fa-hotel"></i> Hotels</span>
+                            <span><i class="fas fa-ship"></i> Houseboat</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary btn-block">Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- Package 10 -->
+                <div class="package-card reveal" data-category="school">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1630830607408-261889eb4968?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBzdHVkZW50cyUyMHRvdXJ8ZW58MXx8fHwxNzY0NzQwMjQzfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Agra Taj Mahal Tour">
+                        <div class="package-badge">School</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Agra Taj Mahal Tour</h3>
+                        <p class="package-duration"><i class="fas fa-clock"></i> 2 Days / 1 Night</p>
+                        <p class="package-description">Visit the iconic Taj Mahal, Agra Fort, and other Mughal architectural marvels.</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-bus"></i> Transport</span>
+                            <span><i class="fas fa-utensils"></i> Meals</span>
+                            <span><i class="fas fa-hotel"></i> Hotels</span>
+                            <span><i class="fas fa-user-tie"></i> Guide</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary btn-block">Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- Package 11 -->
+                <div class="package-card reveal" data-category="devotional">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1589346937506-af86b230e465?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZW1wbGUlMjBwaWxncmltYWdlJTIwaW5kaWF8ZW58MXx8fHwxNzY0NzQwMjQ0fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Varanasi Spiritual Tour">
+                        <div class="package-badge">Spiritual</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Varanasi Spiritual Tour</h3>
+                        <p class="package-duration"><i class="fas fa-clock"></i> 4 Days / 3 Nights</p>
+                        <p class="package-description">Experience the spiritual heart of India with Ganga Aarti, temple visits, and boat rides.</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-bus"></i> Transport</span>
+                            <span><i class="fas fa-utensils"></i> Meals</span>
+                            <span><i class="fas fa-hotel"></i> Hotels</span>
+                            <span><i class="fas fa-user-tie"></i> Guide</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary btn-block">Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- Package 12 -->
+                <div class="package-card reveal" data-category="international">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1695686017637-cbba70d6d5a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob25leW1vb24lMjByb21hbnRpYyUyMGNvdXBsZXxlbnwxfHx8fDE3NjQ3NDAyNDR8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Bali Indonesia">
+                        <div class="package-badge">International</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Bali Indonesia</h3>
+                        <p class="package-duration"><i class="fas fa-clock"></i> 7 Days / 6 Nights</p>
+                        <p class="package-description">Temples, rice terraces, beaches, and vibrant culture in the Island of the Gods.</p>
+                        <div class="package-features">
+                            <span><i class="fas fa-plane"></i> Flights</span>
+                            <span><i class="fas fa-utensils"></i> Meals</span>
+                            <span><i class="fas fa-hotel"></i> Hotels</span>
+                            <span><i class="fas fa-user-tie"></i> Guide</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary btn-block">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Package CTA -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="custom-package-cta reveal">
+                <div class="custom-package-content">
+                    <h2>Can't Find What You're Looking For?</h2>
+                    <p>We create customized tour packages tailored to your specific needs, budget, and preferences. Tell us your dream destination and we'll make it happen!</p>
+                    <a href="contact.html" class="btn btn-primary btn-large">Request Custom Package</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-go">Go</span><span class="logo-nex">Nex</span>
+                        <span class="logo-subtitle">Tours</span>
+                    </div>
+                    <p>Your trusted travel partner for unforgettable journeys. We handle everything so you can focus on creating memories.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">School Trips</a></li>
+                        <li><a href="services.html">Family Tours</a></li>
+                        <li><a href="services.html">Devotional Tours</a></li>
+                        <li><a href="services.html">Honeymoon Packages</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +91 6383960076</li>
+                        <li><i class="fas fa-envelope"></i> info@gonextours.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> GoNex Tours. All rights reserved. | Designed with <i class="fas fa-heart"></i> for travelers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/916383960076" class="float-btn whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+916383960076" class="float-btn call-btn">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
