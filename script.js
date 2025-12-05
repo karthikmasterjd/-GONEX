@@ -611,3 +611,34 @@ window.addEventListener('offline', function() {
     console.log('Connection lost!');
     // You could show a notification to the user
 });
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    // Form data collect pannrathu
+    const params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        mobile: document.getElementById("mobile").value,
+        travelType: document.getElementById("travelType").value,
+        people: document.getElementById("people").value,
+        date: document.getElementById("date").value,
+        message: document.getElementById("message").value
+    };
+
+    // EmailJS config
+    const SERVICE_ID = "service_1ze4lyo"; 
+    const TEMPLATE_ID = "template_imcyz5a"; 
+    const PUBLIC_KEY = "sauLgrXjhPdjbJW5d"; 
+
+    emailjs.init(PUBLIC_KEY);
+
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, params)
+    .then(() => {
+        document.getElementById("contactForm").reset();
+        alert("✅ Thank you! Your request has been submitted successfully. Our team will contact you soon.");
+    })
+    .catch((error) => {
+        console.error("❌ Error:", error);
+        alert("❌ Something went wrong. Please try again.");
+    });
+});
