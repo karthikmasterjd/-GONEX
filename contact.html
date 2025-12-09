@@ -54,54 +54,67 @@
                 <div class="contact-form-wrapper reveal">
                     <h2>Get a Free Quote</h2>
                     <p>Fill out the form below and we'll get back to you within 24 hours</p>
-                    <form id="contactForm" class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
-                            <span class="error-message" id="nameError"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
-                            <span class="error-message" id="emailError"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="mobile">Mobile Number *</label>
-                            <input type="tel" id="mobile" name="mobile" required placeholder="10-digit mobile number">
-                            <span class="error-message" id="mobileError"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="travelType">Travel Type *</label>
-                            <select id="travelType" name="travelType" required>
-                                <option value="">Select travel type</option>
-                                <option value="school">School Trip</option>
-                                <option value="industrial">Industrial Visit</option>
-                                <option value="family">Family Tour</option>
-                                <option value="devotional">Devotional Tour</option>
-                                <option value="honeymoon">Honeymoon Package</option>
-                                <option value="corporate">Corporate Travel</option>
-                                <option value="custom">Custom Package</option>
-                            </select>
-                            <span class="error-message" id="travelTypeError"></span>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="people">Number of People *</label>
-                                <input type="number" id="people" name="people" required min="1" placeholder="0">
-                                <span class="error-message" id="peopleError"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="date">Preferred Date *</label>
-                                <input type="date" id="date" name="date" required>
-                                <span class="error-message" id="dateError"></span>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Additional Details</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your travel preferences, destinations, budget, or any special requirements..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Submit Inquiry</button>
-                    </form>
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" class="contact-form">
+
+    <!-- REQUIRED: Web3Forms Access Key -->
+    <input type="hidden" name="access_key" value="e6181d80-4c98-43e4-8372-c98071ac6514">
+
+    <!-- OPTIONAL: Redirect after success -->
+    <input type="hidden" name="redirect" value="https://yourwebsite.com/success.html">
+
+    <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+        <span class="error-message" id="nameError"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+        <span class="error-message" id="emailError"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="mobile">Mobile Number *</label>
+        <input type="tel" id="mobile" name="mobile" required placeholder="10-digit mobile number">
+        <span class="error-message" id="mobileError"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="travelType">Travel Type *</label>
+        <select id="travelType" name="travelType" required>
+            <option value="">Select travel type</option>
+            <option value="school">School Trip</option>
+            <option value="industrial">Industrial Visit</option>
+            <option value="family">Family Tour</option>
+            <option value="devotional">Devotional Tour</option>
+            <option value="honeymoon">Honeymoon Package</option>
+            <option value="corporate">Corporate Travel</option>
+            <option value="custom">Custom Package</option>
+        </select>
+        <span class="error-message" id="travelTypeError"></span>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="people">Number of People *</label>
+            <input type="number" id="people" name="people" required min="1" placeholder="0">
+            <span class="error-message" id="peopleError"></span>
+        </div>
+        <div class="form-group">
+            <label for="date">Preferred Date *</label>
+            <input type="date" id="date" name="date" required>
+            <span class="error-message" id="dateError"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="message">Additional Details</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us about your travel preferences, destinations, budget, or any special requirements..."></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-block">Submit Inquiry</button>
+</form>
                     <div class="form-success" id="formSuccess">
                         <i class="fas fa-check-circle"></i>
                         <h3>Thank You!</h3>
